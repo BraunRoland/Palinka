@@ -7,6 +7,7 @@ import { Footer } from './components/Footer'
 import { Fontos } from './components/Fontos'
 import { kepek } from './data/Kepek'
 import { Kepek } from './components/Kepek'
+import { Tablazat } from './components/Tablazat'
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
             />
           ))}
         </div>
+        <Tablazat></Tablazat>
         <div className="row mb-1">
           {kepek.map((elem) => (
             <Kepek
