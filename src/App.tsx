@@ -5,6 +5,8 @@ import { listak } from './data/listak'
 import { ListakOl, ListakUl } from './components/listak'
 import { Footer } from './components/Footer'
 import { Fontos } from './components/Fontos'
+import { kepek } from './data/Kepek'
+import { Kepek } from './components/Kepek'
 
 export default function App() {
   return (
@@ -23,6 +25,15 @@ export default function App() {
             <ListakUl 
             cim = {elem.cim}
             tartalom={elem.tartalom}
+            />
+          ))}
+        </div>
+        <div className="row mb-1">
+          {kepek.map((elem) => (
+            <Kepek
+              cim = {elem.cim}
+              tartalom = {elem.tartalom}
+              imgPath = {elem.imgPath} 
             />
           ))}
         </div>
